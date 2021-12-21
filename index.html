@@ -11,24 +11,40 @@
             width: 100%;
             height: 100%;
         }
+        .search{
+            background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
+            height: 380px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .images{
+            margin-left: 15%;
+            margin-right: 15%;
+        }
     </style>
 </head>
 <body>
 <div class="outer">
-    <header>
+    <header style="background-color: rosybrown">
         <img src="assests/images/logo.png" alt="logo" width="60" height="60">
         <a href="login.html">Login</a>
     </header>
-    <div class="content">
-        <input autocomplete="off" type="text" name="search" placeholder="City"><br>
-        <a href="list.html"> <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" height="150" width="150"></a>
-        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" height="150" width="150">
-        <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" height="150" width="150">
-        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" height="150" width="150">
-        <br>
+    <div class="content" style="background-color: #e0e0e0">
+        <div class="search">
+            <input autocomplete="off" type="text" name="search" placeholder="City"><br>
+        </div>
+
+        <div class="images">
+            <a href="list.html"> <img style="padding: 4%; border-radius: 25%" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" height="150" width="150"></a>
+            <img style="padding: 4%; border-radius: 25%" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" height="150" width="150">
+            <img style="padding: 4%; border-radius: 25%" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" height="150" width="150">
+            <img style="padding: 4%; border-radius: 25%" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" height="150" width="150">
+            <br>
+        </div>
         <a href="index.html">View more>></a>
     </div>
-    <footer>
+    <footer style="background-color: rosybrown">
         <a href="contact.html">Contact Us</a><br>
         <a href="https://www.facebook.com/"> <img src="assests/images/facebook.png" height="20" width="22"></a>
         <a href="https://www.instagram.com/"> <img src="assests/images/instagram.png" height="20" width="22"></a>
