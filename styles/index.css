@@ -65,6 +65,11 @@ a{
     text-decoration-line: none;
     color: black;
 }
+.images2{
+    margin-left: 0%;
+    margin-right: 17%;
+}
+
 .imgs {
     opacity: 1;
     transition: .5s ease;
@@ -73,7 +78,6 @@ a{
     margin-top: 50px;
 }
 .content{
-
 }
 .imgs:hover {
     opacity: 0.3;
@@ -82,7 +86,7 @@ a{
     transition: 0s ease;
     opacity: 0;
     position: absolute;
-    top: 80%;
+    top: 82%;
     left: 19%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -92,7 +96,7 @@ a{
     transition: 0s ease;
     opacity: 0;
     position: absolute;
-    top: 80%;
+    top: 82%;
     left: 39.3%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -102,8 +106,8 @@ a{
     transition: 0s ease;
     opacity: 0;
     position: absolute;
-    top: 80%;
-    left: 60.3%;
+    top: 82%;
+    left: 58.3%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
@@ -112,8 +116,48 @@ a{
     transition: 0s ease;
     opacity: 0;
     position: absolute;
-    top: 80%;
-    left: 81%;
+    top: 82%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.m5{
+    transition: 0s ease;
+    opacity: 0;
+    position: absolute;
+    top: 113%;
+    left: 19.6%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.m6{
+    transition: 0s ease;
+    opacity: 0;
+    position: absolute;
+    top: 113%;
+    left: 38.7%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.m7{
+    transition: 0s ease;
+    opacity: 0;
+    position: absolute;
+    top: 113%;
+    left: 58.5%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.m8{
+    transition: 0s ease;
+    opacity: 0;
+    position: absolute;
+    top: 113%;
+    left: 78%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
@@ -129,6 +173,18 @@ a{
     opacity: 1;
 }
 .kol:hover .m4{
+    opacity: 1;
+}
+.chen:hover .m5{
+    opacity: 1;
+}
+.agra:hover .m6{
+    opacity: 1;
+}
+.jai:hover .m7{
+    opacity: 1;
+}
+.beng:hover .m8{
     opacity: 1;
 }
 
