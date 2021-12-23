@@ -3,188 +3,9 @@
     <title>
         List
     </title>
-    <style>
-        body{
-            margin: 0 0 0 0;
-            background-color: #e0e0e0;
-            font-family: 'Ubuntu', sans-serif;
-        }
-        .outer{
-            width: 100%;
-            height: 100%;
-        }
-        .hotels{
-            background-color: lightgrey;
-            margin: 2%;
-            width: 40%;
-        }
 
-        .sticky-footer{
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background-color: #f5f5f5;
-            color: black;
-        }
-        .sticky-header{
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #f5f5f5;
-            color: black;
-            display: flex;
-        }
-        .loglogo{
-            margin-left: 15%;
-        }
-        .loglog{
-            margin-left: 1370px;
-            padding: 19px;
-        }
-        a{
-            text-decoration-line: none;
-            color: black;
-        }
-        .empty{
-            margin-top: 5%;
-            margin-left: 5%;
-            margin-right: 5%;
-            height: 30px;
-        }
-        .rad:hover{
-            background-color: rosybrown;
-        }
-        .lal:hover{
-            background-color: rosybrown;
-        }
-        .taj:hover{
-            background-color: rosybrown;
-        }
-        .btn
-        {
-            background-color:blue;
-        }
-
-        .mappy
-        {
-            visibility: visible;
-        }
-        input[type=text], input[type=password] {
-            width: 400px;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-        }
-        .buttn {
-            background-color: dodgerblue;
-            color: white;
-            padding: 6px 4px;
-            margin: 8px 0;
-            border: none;
-            cursor: pointer;
-            width: 70px;
-            border-radius: 6px;
-        }
-
-        .buttn:hover {
-            opacity: 0.8;
-        }
-        .container{
-            text-align: center;
-        }
-        .container2{
-            text-align: left;
-            margin-left: 10px;
-        }
-
-
-        .modal {
-
-            overflow: auto;
-            background-color: transparent;
-            padding-top: 20px;
-            margin-right: 400px;
-        }
-
-        .modal-content {
-            background-color: #fefefe;
-            border: 1px solid #888;
-            width: 200px; }
-
-        .close {
-            position: absolute;
-            right: 25px;
-            top: 0;
-            color: #000;
-            font-size: 35px;
-            font-weight: bold;
-        }
-        .inp{
-            height: 20px;
-            width: 800px;
-            border-radius: 4px;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: red;
-            cursor: pointer;
-        }
-        .horizontal-line{
-            border-bottom: 1px solid #ccc;
-            width: 100%;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-
-        /* Add Zoom Animation */
-        .animate {
-            -webkit-animation: animatezoom 0.6s;
-            animation: animatezoom 0.6s
-        }
-
-        @-webkit-keyframes animatezoom {
-            from {-webkit-transform: scale(0)}
-            to {-webkit-transform: scale(1)}
-        }
-
-        @keyframes animatezoom {
-            from {transform: scale(0)}
-            to {transform: scale(1)}
-        }
-
-        /* Change styles for span and cancel button on extra small screens */
-        @media screen and (max-width: 300px) {
-            span.psw {
-                display: block;
-                float: none;
-            }
-            .cancelbtn {
-                width: 100%;
-            }
-        }
-
-        .btn2{
-            border: none;
-            border-radius: 4px;
-        }
-
-        .blue{
-            background-color: white;
-        }
-
-        .highlight {
-            background-color: dodgerblue;
-        }
-        a,a:hover {
-            text-decoration-line: none;
-            color: black;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/list.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -192,40 +13,59 @@
 </head>
 <body>
 <div class="outer">
-    <header id="toppy" class="sticky-header" style="background-color: rosybrown">
-        <div><a href="index.html"><img class="loglogo" src="assests/images/logo.png" alt="logo" width="60" height="60"></a></div>
-        <div class="loglog"><button onclick="document.getElementById('id01').style.display='block'" type="button" class="btn btn-light btn-sm">LOGIN</button></div>
+
+    <header class="sticky-header navbar sticky-top" style="background-color: rosybrown">
+        <div class=""><a href="index.html"><img class="loglogo" src="assests/images/logo.png" alt="logo" width="60" height="60"></a></div>
+        <div class="navbar-right"><button onclick="document.getElementById('id01').style.display='block'" type="button" class="btn btn-light btn-sm">LOGIN</button></div>
     </header>
-    <div id="content" style="margin-top: 80px">
+    <div id="content" style="margin-top: 40px">
         <div class="list" style="text-decoration: none">
             <ul style="list-style-type:none;">
                 <center><a href="#toppy"><button id="toggle1" class="btn2 blue" style="border: none;padding: 4px 10px;text-decoration: none;color: black;margin-right: 20px;">List View</button></a> <label></label><a href="#toppy"><button id="toggle2" class="btn2 blue" style="border: none;padding: 4px 10px;text-decoration:none; color: black;">Map View</button> </a></center>
             </ul>
         </div>
 
-        <div id="fourth">
-        <a href="detail.html"> <div class="hotels rad" style="float: left">
-            <img style="float: left" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" height="250" width="250"><br>
-            <div class="text-decoration-none" style="float: right; margin-right: 100px">
+        <div id="fourth" style="margin-left: 30px">
+        <a href="detail.html"> <div class="hotels rad float-lg-left float-md-none" style="float: left">
+            <img class=" float-md-left float-lg-left" style="float: left" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" height="250" width="250"><br>
+            <div class="text-decoration-none text-md-16 float-md-right float-lg-right" style="float: right; margin-right: 15%">
                 <a class="text-decoration-none" href=""><h3 style="color: black">Radisson Blu Hotel</h3></a>
-                <p ><a style="text-decoration-line: none; color: black" href="">5 Star</a><br></p>
+                <p ><a style="text-decoration-line: none; color: black" href="">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </a><br></p>
                 <p><a style="text-decoration-line: none; color: black" href="">New Delhi</a><br></p>
             </div>
         </div></a>
-        <div class="hotels lal" style="float: right">
-        <img style="float: left" src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" height="250" width="250"><br>
-        <div style="float: right; margin-right: 94px">
+        <div class="hotels lal float-lg-left float-md-none" style="float: right; margin-left: 180px">
+        <img class=" float-md-left float-lg-left" style="float: left" src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" height="250" width="250"><br>
+        <div class="text-decoration-none text-md-16 float-md-right float-lg-right" style="float: right; margin-right: 94px">
             <h3>The Lalit New Delhi</h3>
-            <p>4.5 Star</p>
+            <p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <i class="fa fa-star-half-o checked"  ></i>
+            </p>
             <p>New Delhi</p>
         </div>
         </div>
 
-        <div class="hotels taj" style="float: left; margin-bottom: 120px">
-            <img style="float: left" src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" height="250" width="250"><br>
-            <div style="float: right; margin-right: 214px">
+        <div class="hotels taj float-lg-left float-md-none" style="float: left; margin-bottom: 120px">
+            <img class=" float-md-left float-lg-left" style="float: left" src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" height="250" width="250"><br>
+            <div class="text-decoration-none text-md-16 float-md-right float-lg-right" style="float: right; margin-right: 214px">
                 <h3>Taj Palace</h3>
-                <p>4 Star</p>
+                <p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </p>
                 <p>New Delhi</p>
             </div>
         </div>
@@ -235,13 +75,13 @@
             <p>MAP VIEW</p>
         </div>
     </div>
-    <footer class="sticky-footer" style="background-color: rosybrown; color: black; height: 60px" >
-        <button style="color:black;float:left;text-decoration-line: none ;margin-left: 2%;margin-top: 15px ;padding-top: 0.5%;" onclick="document.getElementById('id02').style.display='block'" type="button" class="btn btn-info btn-sm">Contact Us</button><br>
-        <div  style="padding-bottom: 10px;float: left; padding-left: 36%">&copy; 2020 ROOM SEARCH PVT.LTD.</div>
-        <div style="float: right; margin-right: 2%">
-            <a href="https://www.facebook.com/"> <img src="assests/images/facebook.png" height="24" width="22"></a>
-            <a href="https://www.instagram.com/"> <img src="assests/images/instagram.png" height="24" width="22"></a>
-            <a href="https://www.twitter.com/"><img src="assests/images/twitter.png" height="24" width="22"></a><br>
+    <footer class="sticky-footer navbar  fixed-bottom" style="background-color: rosybrown; color: black; height: 60px" >
+        <button style="color:black;float:left;text-decoration-line: none ;margin-left: 2%;margin-top: 5px ;padding-top: 0.5%;" onclick="document.getElementById('id02').style.display='block'" type="button" class="btn btn-info btn-sm">Contact Us</button><br>
+        <div class="eco" style="padding-bottom: 5px;margin-left: 0%; margin-right: 16%">&copy; 2020 ROOM SEARCH PVT.LTD.</div>
+        <div class="navbar-right" style="float: right; margin-right: 2%">
+            <a href="https://www.facebook.com/"> <img src="assests/images/facebook.png" height="20" width="20"></a>
+            <a href="https://www.instagram.com/"> <img src="assests/images/instagram.png" height="20" width="20"></a>
+            <a href="https://www.twitter.com/"><img src="assests/images/twitter.png" height="20" width="20"></a><br>
         </div>
     </footer>
 </div>
